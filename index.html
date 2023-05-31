@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Share Modal | ASHWANI</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/1807d9d850.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -14,23 +13,25 @@
         <div class="circle2"></div>
 
         <div class="card">
-            <div>
-                <img src="/img/UserImage.jpeg" alt="">
-            </div>
-            <div class="user-naame">
-                <h2>Ashwani</h2>
-            </div>
-            <div class="designation">
-                <h3>Web Developer</h3>
-            </div>
-            <div class="btns">
-                <button onclick="openModal()" class="btn-card btn-share">
-                    <i class="fa-solid fa-share"></i>
-                    <div>Share My Profile</div>
-                </button class="btn-card btn-follow">
-                <button>
-                    <div>Follow Me</div>
-                </button>
+            <div class="card-wrapper">
+                <div>
+                    <img src="/img/UserImage.jpeg" alt="">
+                </div>
+                <div class="user-name">
+                    <h2>Ashwani</h2>
+                </div>
+                <div class="designation">
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="btns">
+                    <button onclick="openModal()" class="btn-card btn-share">
+                        <i class="fa-solid fa-share"></i>
+                        <div>Share My Profile</div>
+                    </button>
+                    <button class="btn-card btn-follow">
+                        <div>Follow Me</div>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -39,8 +40,8 @@
         <div class="modal">
             <div class="modal-header">
                 <h1>Share My Profile</h1>
-                <button onclick="clodeModal()">
-                    <i class="fa-solid fa-xmark"></i>
+                <button onclick="closeModal()">
+                    <i class="fa-solid fa-xmark close"></i>
                 </button>
             </div>
 
@@ -78,6 +79,7 @@
 
         <div class="overlay" onclick="closeModal()"> </div>
         
+        <script src="https://kit.fontawesome.com/1807d9d850.js" crossorigin="anonymous"></script>
         <script src="./script.js"></script>
 
     </div>
